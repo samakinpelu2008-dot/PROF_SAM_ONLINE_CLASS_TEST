@@ -84,11 +84,10 @@ button:hover {
   margin: 10px 0;
   border-radius: 12px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s;
   text-align: left;
-  opacity: 0;
-  transform: translateX(-30px);
-  animation: slideIn 0.5s forwards;
+  opacity: 1; /* visible immediately */
+  transform: translateX(0); /* normal position */
 }
 
 .option:hover {
@@ -127,10 +126,6 @@ input#examCode {
 @keyframes pulse {
   0%, 100% { transform: scale(1);}
   50% { transform: scale(1.1);}
-}
-
-@keyframes slideIn {
-  to {opacity: 1; transform: translateX(0);}
 }
 
 /* MOBILE RESPONSIVE */
